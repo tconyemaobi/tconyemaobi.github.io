@@ -1,54 +1,85 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.6}
-    header{display:flex;align-items:center;gap:16px}
-    img.avatar{width:72px;height:72px;border-radius:50%}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-    .card{border:1px solid #ddd;border-radius:12px;padding:16px}
-    a{color:inherit}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collins Onyemaobi — Data Scientist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <img class="avatar" src="images/avatar.jpg" alt="Your photo">
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="max-w-6xl mx-auto py-12 px-6 flex flex-col md:flex-row items-center gap-8">
+    <img src="images/profile.jpg" alt="Collins Onyemaobi" class="w-32 h-32 rounded-full shadow-lg object-cover">
     <div>
-      <h1>Collins Onyemaobi</h1>
-      <p>Short tagline — e.g., Frontend Developer focused on accessibility and performance.</p>
-      <p>
-        <a href="mailto:you@example.com">Email</a> ·
-        <a href="https://www.linkedin.com/in/yourhandle">LinkedIn</a> ·
-        <a href="https://github.com/YOUR-USERNAME">GitHub</a> ·
-        <a href="resume.pdf">Résumé</a>
-      </p>
+      <h1 class="text-3xl font-bold text-gray-900">Collins Onyemaobi</h1>
+      <p class="text-lg text-gray-600 mt-2">Seasoned Data Scientist | Turning Data into Actionable Insights</p>
+      <div class="mt-4 flex gap-4">
+        <a href="mailto:you@example.com" class="text-blue-600 hover:underline">Email</a>
+        <a href="https://www.linkedin.com/in/your-handle" class="text-blue-600 hover:underline">LinkedIn</a>
+        <a href="https://github.com/your-username" class="text-blue-600 hover:underline">GitHub</a>
+        <a href="resume.pdf" class="text-blue-600 hover:underline">Résumé</a>
+      </div>
     </div>
   </header>
 
-  <h2>Projects</h2>
-  <div class="grid">
-    <article class="card">
-      <h3><a href="https://github.com/tc.onyemaobi/awesome-project">Awesome Project</a></h3>
-      <p>One-line description of what it does and why it’s cool.</p>
-      <p>Tech: React, Node, PostgreSQL</p>
-      <p><a href="https://demo.example.com">Live demo</a></p>
-    </article>
+  <!-- Projects -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-8">Featured Projects</h2>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Project Card -->
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-bold text-gray-900">Predictive Analytics Dashboard</h3>
+        <p class="text-gray-600 mt-2">Built an interactive dashboard to forecast sales using machine learning models.</p>
+        <p class="mt-2 text-sm text-gray-500">Tech: Python, scikit-learn, Plotly, Flask</p>
+        <a href="https://github.com/your-username/project1" class="mt-4 inline-block text-blue-600 hover:underline">View on GitHub →</a>
+      </article>
 
-    <article class="card">
-      <h3><a href="https://github.com/tc.onyemaobi/another-project">Another Project</a></h3>
-      <p>Brief description and role.</p>
-      <p>Tech: Python, FastAPI</p>
-    </article>
-  </div>
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-bold text-gray-900">Customer Churn Prediction</h3>
+        <p class="text-gray-600 mt-2">Developed an ML pipeline to identify at-risk customers and reduce churn rates.</p>
+        <p class="mt-2 text-sm text-gray-500">Tech: Python, TensorFlow, Pandas, Streamlit</p>
+        <a href="https://github.com/your-username/project2" class="mt-4 inline-block text-blue-600 hover:underline">View on GitHub →</a>
+      </article>
 
-  <h2>About</h2>
-  <p>Mini bio, your interests, and what you’re looking for.</p>
+      <article class="bg-white rounded-2xl shadow hover:shadow-lg transition p-6">
+        <h3 class="text-xl font-bold text-gray-900">NLP Sentiment Analyzer</h3>
+        <p class="text-gray-600 mt-2">Implemented a sentiment analysis model to classify customer feedback.</p>
+        <p class="mt-2 text-sm text-gray-500">Tech: Python, Hugging Face Transformers, FastAPI</p>
+        <a href="https://github.com/your-username/project3" class="mt-4 inline-block text-blue-600 hover:underline">View on GitHub →</a>
+      </article>
+    </div>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Best way to reach you and your location/timezone.</p>
+  <!-- About -->
+  <section class="bg-white py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Me</h2>
+      <p class="text-gray-600 leading-relaxed">
+        I am a seasoned Data Scientist passionate about transforming complex datasets into actionable strategies. 
+        My expertise spans predictive modeling, natural language processing, and data visualization. 
+        With years of experience across diverse industries, I thrive at the intersection of data, business, and innovation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Get in Touch</h2>
+    <p class="text-gray-600 mb-6">I’m open to collaborations, consulting, and new opportunities. Let’s connect!</p>
+    <a href="mailto:you@example.com" class="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
+      Contact Me
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-gray-500 text-sm">
+    © <span id="year"></span> Collins Onyemaobi. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
